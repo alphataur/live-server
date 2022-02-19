@@ -1,0 +1,27 @@
+{
+  "name": "live-server",
+  "version": "1.0.0",
+  "description": "rapidly convert ideas to UI using pug and tailwind",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alphataur/live-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alphataur/live-server/issues"
+  },
+  "homepage": "https://github.com/alphataur/live-server#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

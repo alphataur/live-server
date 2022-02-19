@@ -1,0 +1,44 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Tailwind CSS 3 Simple Chat UI 
+  script(src='https://cdn.tailwindcss.com')
+body.max-w-6xl.mx-auto
+  .container.mx-auto
+    .max-w-2xl.border.rounded.mx-auto
+      div
+        .w-full
+          .relative.flex.items-center.p-3.border-b.border-gray-300
+            img.object-cover.w-10.h-10.rounded-full(src='https://www.pngitem.com/pimgs/m/66-668806_openai-logo-openai-logo-elon-musk-hd-png.png' alt='username')
+            span.block.ml-2.font-bold.text-gray-600 OpenAI
+            span.absolute.w-3.h-3.bg-green-600.rounded-full.left-10.top-3
+          .relative.w-full.p-6.overflow-y-auto(class='h-[40rem]')
+            ul.space-y-2
+              li.flex.justify-start
+                .relative.max-w-xl.px-4.py-2.text-gray-700.rounded.shadow
+                  span.block Hi
+              li.flex.justify-end
+                .relative.max-w-xl.px-4.py-2.text-gray-700.bg-gray-100.rounded.shadow
+                  span.block Hiiii
+              li.flex.justify-end
+                .relative.max-w-xl.px-4.py-2.text-gray-700.bg-gray-100.rounded.shadow
+                  span.block how are you?
+              li.flex.justify-start
+                .relative.max-w-xl.px-4.py-2.text-gray-700.rounded.shadow
+                  span.block Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+          .flex.items-center.justify-between.w-full.p-3.border-t.border-gray-300
+            input.block.w-full.py-2.pl-4.mx-3.bg-gray-100.rounded-full.outline-none(type='text' placeholder='Message' class='focus:text-gray-700' name='message' required='')
+            button(type='submit' id="handeleSubmit")
+              svg.w-5.h-5.text-gray-500.origin-center.transform.rotate-90(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 20 20' fill='currentColor')
+                path(d='M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z')
+
+//html
+//  head
+//    title A home page
+//    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css")
+//  body
+//    div(id="wrapper" class="mx-auto px-4 h-full flex flex-col justify-center items-center")
+//      div.flex.flex-col.items-center.justify-center.bg-blue-500.mx-auto.m-4.h-full
+//        h1 Something in here
